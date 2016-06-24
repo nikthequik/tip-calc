@@ -3,26 +3,60 @@ body {
 	padding: 1em;
 }
 #title {
-	font-size: 3em;
-	text-align: center; 	
+	font-size: 4em;
+	text-align: center;
+	margin: 0.3em;
 }
 section {
 	border: 5px solid black;
 }
+
+section>h2 {
+	font-size: 1.5em;
+	margin: 0.2em;
+	margin-left: 2em;
+}
+section>h5 {
+	margin: 0;
+	margin-left: 1em;
+}
+
+.mdInput {
+	float: right;
+	margin-right: 16%;
+}
+
+label {
+	font-size: 1em;
+	float: right;
+}
+
+
 
 #details {
 	float: left;
 	margin: 0 auto;
 	clear: both;
 	height: 28.6em;
-	width: 43%;
+	width: 40%;
 	margin-left: 5em;
+}
+
+form {
+	text-align: center;
+	padding-top: 3em;
+}
+
+button {
+	font-family: cursive;
+	font-size: 1em;
+	margin: 1em;
 }
 
 #charges {
 	float: right;
 	margin-right: 4em;
-	width: 38%;
+	width: 41%;
 	height: 13em;
 	margin-bottom: 2em;
 }
@@ -30,6 +64,13 @@ section {
 #earnings {
 	float: right;
 	margin-right: 4em;
-	width: 38%;
+	width: 41%;
 	height: 13em;
+}
+
+#reset {
+	float:right;
+	clear: both;
+	margin-right: 4em;
+	margin-top: 0.8em;
 }
