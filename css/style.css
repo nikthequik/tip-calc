@@ -12,13 +12,24 @@ section {
 
 #details {
 	float: left;
+	margin: 0 auto;
+	clear: both;
+	height: 28.6em;
+	width: 43%;
+	margin-left: 5em;
 }
 
 #charges {
 	float: right;
+	margin-right: 4em;
+	width: 38%;
+	height: 13em;
+	margin-bottom: 2em;
 }
 
 #earnings {
-float: right;
-clear: both;
+	float: right;
+	margin-right: 4em;
+	width: 38%;
+	height: 13em;
 }
