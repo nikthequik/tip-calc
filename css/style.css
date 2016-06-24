@@ -9,6 +9,7 @@ body {
 }
 section {
 	border: 5px solid black;
+	border-radius: 4px;
 }
 
 section>h2 {
@@ -23,7 +24,7 @@ section>h5 {
 
 .mdInput {
 	float: right;
-	margin-right: 16%;
+	margin-right: 10%;
 }
 
 label {
