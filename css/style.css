@@ -1,0 +1,24 @@
+body {
+	font-family: cursive, sans-serif;
+	padding: 1em;
+}
+#title {
+	font-size: 3em;
+	text-align: center; 	
+}
+section {
+	border: 5px solid black;
+}
+
+#details {
+	float: left;
+}
+
+#charges {
+	float: right;
+}
+
+#earnings {
+float: right;
+clear: both;
+}
