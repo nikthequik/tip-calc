@@ -1,6 +1,5 @@
 body {
 	font-family: cursive, sans-serif;
-	padding: 1em;
 }
 #title {
 	font-size: 4em;
@@ -22,25 +21,19 @@ section>h5 {
 	margin-left: 1em;
 }
 
-.mdInput {
-	float: right;
-	margin-right: 10%;
-}
+.mdInput {margin-bottom: 1em;}
 
 label {
 	font-size: 1em;
-	float: right;
 }
 
 
 
 #details {
-	float: left;
-	margin: 0 auto;
-	clear: both;
 	height: 28.6em;
-	width: 40%;
-	margin-left: 5em;
+	width: 46%;
+	position: absolute;
+	margin-left: 1em;
 }
 
 form {
@@ -55,23 +48,23 @@ button {
 }
 
 #charges {
-	float: right;
-	margin-right: 4em;
-	width: 41%;
+	width: 45%;
+	margin-left: 52%;
+	position: absolute;
+	top: 8em;
 	height: 13em;
-	margin-bottom: 2em;
 }
 
 #earnings {
-	float: right;
-	margin-right: 4em;
-	width: 41%;
+	width: 45%;
+	position: absolute;
 	height: 13em;
+	top: 23.6em;
+	margin-left: 52%;
 }
 
 #reset {
-	float:right;
-	clear: both;
-	margin-right: 4em;
-	margin-top: 0.8em;
+	position: absolute;
+	top: 38em;
+	right: 3em;
 }

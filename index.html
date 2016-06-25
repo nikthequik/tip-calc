@@ -2,7 +2,9 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<title>Waitstaff Tip Calculator</title>
+	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body ng-app="tipCalc" ng-controller="mealCtrl">
@@ -12,9 +14,9 @@
 		<h2>Enter the Meal Details</h2>
 		<hr>
 		<form name="mdForm" id="detailForm">
-			<input type="text" class="mdInput" ng-model="bmp"><label>Base Meal Price: $</label><br>
-			<input type="text" class="mdInput"><label>Tax Rate: %</label><br>
-			<input type="text" class="mdInput"><label>Tip Percentage: %</label><br>
+			<label>Base Meal Price: $</label><input type="text" class="mdInput"><br>
+			<label>Tax Rate: %</label><input type="text" class="mdInput"><br>
+			<label>Tip Percentage: %</label><input type="text" class="mdInput"><br>
 			<button type="submit">Submit</button>
 			<button type="button">Clear</button>
 		</form>
