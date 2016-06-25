@@ -1,6 +1,7 @@
 body {
 	font-family: cursive, sans-serif;
 }
+
 #title {
 	font-size: 4em;
 	text-align: center;
@@ -16,18 +17,19 @@ section>h2 {
 	margin: 0.2em;
 	margin-left: 2em;
 }
+
 section>h5 {
 	margin: 0;
 	margin-left: 1em;
 }
 
-.mdInput {margin-bottom: 1em;}
+.mdInput {
+	margin-bottom: 2em;
+}
 
 label {
 	font-size: 1em;
 }
-
-
 
 #details {
 	position: absolute;
@@ -49,7 +51,7 @@ label:nth-of-type(2) {
 button {
 	font-family: cursive;
 	font-size: 1em;
-	margin: .5em;
+	margin: .5em 1em;
 }
 
 #charges {
