@@ -111,29 +111,34 @@ button {
 	}
 
 	#title {
-		margin-top: 0.6em;
+		margin-top: 0.3em;
 		font-size: 1.3em;
 	}
 
 	#details {
-		top: 5.3em;
+		top: 3.6em;
 		height: 19.9em;
 	}
 
 	#charges {
-		top: 5.3em;
+		top: 3.6em;
 		height: 10em;
 		line-height: 1em;
 	}
 
 	#earnings {
-		top: 16.2em;
+		top: 14.5em;
 		height: 9em;
 		line-height: 1.1em;
 	}
 
 	button {
-		font-size: .8em;
+		font-size: 0.7em;
+	}
+
+	#reset {
+		top: 35em;
+		right: 0.5em;
 	}
 
 }
