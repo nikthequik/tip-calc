@@ -13,8 +13,8 @@
 	<section id="details">
 		<h2>Enter the Meal Details</h2>
 		<hr>
-		<form name="mdForm" id="detailForm" ng-submit="vm.submit(vm.bmp, vm.taxRate, vm.tipPerc)">
-			<label>Base Meal Price: $</label><input type="number" class="mdInput" ng-model="vm.bmp" required><br>
+		<form name="mdForm" id="detailForm" ng-submit="vm.submit()">
+			<label>Base Meal Price: $</label><input id="baseMP" type="number" class="mdInput" ng-model="vm.bmp" required><br>
 			<label>Tax Rate: %</label><input type="number" class="mdInput" ng-model="vm.taxRate" required><br>
 			<label>Tip Percentage: %</label><input type="number" class="mdInput" ng-model="vm.tipPerc" required><br>
 			<button type="submit">Submit</button>
@@ -26,24 +26,26 @@
 	<section id="charges">
 		<h2>Customer Charges</h2>
 		<hr>
-		<h5>Subtotal: {{vm.sub | currency}}</h5><br>
-		<h5>Tip: {{vm.tip | currency}}</h5><br>
+		<h5>Subtotal: {{vm.meal.sub | currency}}</h5><br>
+		<h5>Tip: {{vm.meal.tip | currency}}</h5><br>
 		<hr>
-		<h5>Total: {{vm.total | currency}}</h5>
+		<h5>Total: {{vm.meal.total | currency}}</h5>
 	</section><br>
 	
 
 	<section id="earnings">
 		<h2>My Earnings Info</h2>
 		<hr>
-		<h5>Tip Total: {{vm.tipTotal | currency}}</h5><br>
-		<h5>Meal Count: {{vm.mealCount}}</h5><br>
-		<h5>Average Tip Per Meal: {{vm.atpm | currency}}</h5>
+		<h5>Tip Total: {{vm.earnings.tipTotal | currency}}</h5><br>
+		<h5>Meal Count: {{vm.earnings.tips.length}}</h5><br>
+		<h5>Average Tip Per Meal: {{vm.earnings.avgTip | currency}}</h5>
 	</section>
 
 	<button type="button" id="reset" ng-click="vm.reset()">Reset</button>
 	
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
 	<script src="js/app.js"></script>
+	<script src="js/mealSvc.js"></script>
+	<script src="js/mealCtrl.js"></script>
 </body>
 </html>
