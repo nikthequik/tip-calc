@@ -6,6 +6,7 @@ body {
 	font-size: 3em;
 	text-align: center;
 	margin-bottom: -0.7em;
+	margin-top: -0.4em;
 }
 
 #nav {
@@ -25,8 +26,9 @@ body {
 #explain {
 	margin: 0 auto;
 	text-align: center;
+	line-height: 1.6em;
 	padding: 0 1em;
-	max-width: 46%;
+	max-width: 60%;
 }
 
 #explain ul {
@@ -44,7 +46,7 @@ section {
 }
 
 section>h2 {
-	font-size: 1.5em;
+	font-size: 1.1em;
 	margin: 0.2em;
 	margin-left: 2em;
 }
@@ -52,11 +54,11 @@ section>h2 {
 section h5 {
 	margin: 0;
 	margin-left: 1em;
-	font-size: 1.1em;
+	font-size: 0.9em;
 }
 
 .mdInput {
-	margin-bottom: 0.4em;
+	height: 2em;
 }
 
 label {
@@ -64,15 +66,15 @@ label {
 }
 
 #details {
-	height: 28.6em;
+	height: 40vh;
 	overflow: hidden;
-	width: 46%;
+	line-height: 1.5em;
+	width: 60%;
 	margin: 0 auto 2vh;
 }
 
 form {
 	text-align: center;
-	padding-top: 0.3em;
 }
 
 label:nth-of-type(2) {
@@ -85,30 +87,24 @@ hr:nth-of-type(2) {
 
 button {
 	font-family: 'Bungee', cursive;
+	margin-top: 0.3em;
 }
 
 #charges {
-	width: 46%;
-	line-height: 1.7em;
+	width: 60%;
+	line-height: 1.6em;
 	height: 13em;
 	margin: 0 auto;
 }
 
 #earnings {
-	width: 45%;
-	position: absolute;
+	width: 60%;
 	height: 13em;
-	top: 23.6em;
 	line-height: 1.8em;
-	margin-left: 52%;
+	margin: 0 auto 1vh;
 }
 
-#reset {
-	position: absolute;
-	top: 38em;
-	right: 3em;
-	margin-bottom: 1em;
-}
+#reset {display: block;margin: 0 auto;}
 
 @media (max-width: 848px){
 
@@ -129,16 +125,22 @@ button {
 @media (max-width: 568px){
 	section>h2 {
 		margin-left: 0.1em;
-		font-size: 0.6em;
+		margin-top: 0.7em;
+		font-size: 0.7em;
 	}
 
 	section h5 {
-		font-size: .5em;
+		font-size: 0.6em;
 	}
 
 	#title {
 		margin-top: 0.3em;
 		font-size: 1.3em;
+	}
+
+	#explain {
+		font-size: 0.6em;
+		line-height: 1.4em;
 	}
 
 	#details {
