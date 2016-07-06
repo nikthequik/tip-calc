@@ -37,8 +37,6 @@ body {
 	text-align: left;
 }
 
-
-
 section {
 	border: 5px solid black;
 	border-radius: 4px;
@@ -104,7 +102,10 @@ button {
 	margin: 0 auto 1vh;
 }
 
-#reset {display: block;margin: 0 auto;}
+#reset {
+	display: block;
+	margin: 0 auto;
+}
 
 @media (max-width: 848px){
 
@@ -118,14 +119,14 @@ button {
 	}
 
 	section h5 {
-	font-size: 0.8em;
+		font-size: 0.8em;
 	}
 }
 
 @media (max-width: 568px){
 	section>h2 {
 		margin-left: 0.1em;
-		margin-top: 0.7em;
+		margin-top: 0.5em;
 		font-size: 0.7em;
 	}
 
@@ -138,24 +139,25 @@ button {
 		font-size: 1.3em;
 	}
 
+	#nav {
+		margin-top: 0.3em;
+	}
+
 	#explain {
 		font-size: 0.6em;
 		line-height: 1.4em;
 	}
 
 	#details {
-		top: 3.6em;
 		height: 19.9em;
 	}
 
 	#charges {
-		top: 3.6em;
 		height: 10em;
 		line-height: 1em;
 	}
 
 	#earnings {
-		top: 14.5em;
 		height: 9em;
 		line-height: 1.1em;
 	}
@@ -163,10 +165,4 @@ button {
 	button {
 		font-size: 0.7em;
 	}
-
-	#reset {
-		top: 35em;
-		right: 0.5em;
-	}
-
 }
