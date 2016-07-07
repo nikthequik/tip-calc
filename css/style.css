@@ -14,9 +14,9 @@ body {
 }
 
 .nav-link {
-	padding: 1vw;
-    text-decoration: none;
-    color: #333;
+	padding: 0 1vw;
+	text-decoration: none;
+	color: #333;
 }
 
 .nav-link:hover {
@@ -64,7 +64,7 @@ label {
 }
 
 #details {
-	height: 40vh;
+	height: 19.9em;
 	overflow: hidden;
 	line-height: 1.5em;
 	width: 60%;
@@ -111,7 +111,7 @@ button {
 
 	#title {
 		font-size: 2.2em;
-		margin-top: .7em;
+		max-height: 25vh;
 	}
 	
 	section>h2 {
@@ -120,6 +120,18 @@ button {
 
 	section h5 {
 		font-size: 0.8em;
+	}
+
+	#nav {
+		max-height: 9vh;
+	}
+
+	#details {
+		height: 19.9em;
+	}
+
+	.nav-link {
+		font-size: .9em;
 	}
 }
 
@@ -137,6 +149,7 @@ button {
 	#title {
 		margin-top: 0.3em;
 		font-size: 1.3em;
+		max-height: 12vh;
 	}
 
 	#nav {
