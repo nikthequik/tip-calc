@@ -1,9 +1,9 @@
 <section id="earnings">
 	<h2>My Earnings Info</h2>
 	<hr>
-	<h5>Tip Total: {{vm.earnings.tipTotal | currency}}</h5><br>
-	<h5>Meal Count: {{vm.earnings.tips.length}}</h5><br>
-	<h5>Average Tip Per Meal: {{vm.earnings.avgTip | currency}}</h5>
+	<h5>Tip Total: {{vm.root.earnings.tipTotal | currency}}</h5><br>
+	<h5>Meal Count: {{vm.root.earnings.tips.length}}</h5><br>
+	<h5>Average Tip Per Meal: {{vm.root.earnings.avgTip | currency}}</h5>
 </section>
 
 <button type="button" id="reset" ng-click="vm.reset()">Reset</button>

@@ -1,24 +1,30 @@
 (function(){
 	angular.module("tipCalc")
-	.controller("mealCtrl", function($scope, mealSvc){
+	.controller("mealCtrl", function($scope, mealSvc, $rootScope){
 		var vm = this;
+		vm.root = $rootScope;
 		vm.submit = function(){
-			vm.meal = mealSvc.calcTip(vm.bmp, vm.taxRate, vm.tipPerc);
-			vm.earnings.tipTotal += vm.meal.tip;
-			vm.earnings.tips.push(vm.meal.tip);
-			vm.earnings.avgTip = mealSvc.avgTip(vm.earnings.tips);
-			mdForm.reset();
-			
+			vm.root.meal = mealSvc.calcTip(vm.bmp, vm.taxRate, vm.tipPerc);
+			vm.root.earnings.tipTotal += vm.root.meal.tip;
+			vm.root.earnings.tips.push(vm.root.meal.tip);
+			vm.root.earnings.avgTip = mealSvc.avgTip(vm.root.earnings.tips);
+			vm.clear();
         	window.document.getElementById('baseMP').focus();
       
 		};
 		vm.clear = function(){
 			mdForm.reset();
+			vm.bmp = ""; 
+			vm.taxRate = ""; 
+			vm.tipPerc = "";
 		}
 		vm.reset = function(){
-			vm.meal = mealSvc.resetMeal();
-			vm.earnings = mealSvc.resetEarnings();
+			vm.root.meal = mealSvc.resetMeal();
+			vm.root.earnings = mealSvc.resetEarnings();
 		}
-		vm.reset();
+		if (!vm.root.meal) {
+			vm.reset();
+		}
+		
 	});
 })();
