@@ -1,4 +1,8 @@
-body {
+body, html {
+	margin: 0;
+	padding: 0;
+	position: relative;
+	height: 100%;	
 	font-family: 'Bungee', cursive, sans-serif;
 }
 
@@ -27,8 +31,11 @@ body {
 	margin: 0 auto;
 	text-align: center;
 	line-height: 1.6em;
-	padding: 0 1em;
 	max-width: 60%;
+}
+
+#explain p {
+	margin: 1em;
 }
 
 #explain ul {
@@ -105,6 +112,60 @@ button {
 #reset {
 	display: block;
 	margin: 0 auto;
+}
+
+.loading {
+	position: relative;
+	height: 100%;
+}
+
+.loading:before {
+	position: absolute;
+	content: "";
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	z-index: 1000;
+	background: rgba(255, 255, 255, 0.9) no-repeat center center;
+	background-image: url('../img/loading.gif');
+}
+
+.animate-view-container {
+	position: relative;
+	min-height: 100%;
+}
+
+.animate-view.ng-enter,
+.animate-view.ng-leave {
+	transition: 1s linear all;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	background: #eee;
+}
+
+.animate-view.ng-enter{ 
+	transform: scale(0);
+	z-index: 100;
+}
+
+.animate-view.ng-enter.ng-enter-active { 
+	left: 0em;
+	transform: scale(1);
+}
+
+.animate-view.ng-leave {
+	left: 0em;
+	z-index: 99;
+	transform: scale(1);
+}
+
+.animate-view.ng-leave.ng-leave-active { 
+	left: 30em; 
+	transform: scale(0);
 }
 
 @media (max-width: 848px){
