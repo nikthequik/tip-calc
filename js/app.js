@@ -10,7 +10,7 @@
         $rootScope.$on('$routeChangeSuccess', function() {
           $timeout(function() {
             $rootScope.isLoading = false;
-          }, 1000);
+          }, 500);
         });
     }])
 	.config(['$routeProvider', function($routeProvider){

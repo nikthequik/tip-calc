@@ -9,8 +9,8 @@ body, html {
 #title {
 	font-size: 3em;
 	text-align: center;
-	margin-bottom: -0.7em;
-	margin-top: -0.4em;
+	margin-bottom: -0.1em;
+	margin-top: 0em;
 }
 
 #nav {
@@ -71,7 +71,7 @@ label {
 }
 
 #details {
-	height: 19.9em;
+	height: 48vh;
 	overflow: hidden;
 	line-height: 1.5em;
 	width: 60%;
@@ -133,7 +133,7 @@ button {
 
 .animate-view-container {
 	position: relative;
-	min-height: 100%;
+	min-height: 89%;
 }
 
 .animate-view.ng-enter,
@@ -144,7 +144,7 @@ button {
 	right: 0;
 	bottom: 0;
 	top: 0;
-	background: #eee;
+	
 }
 
 .animate-view.ng-enter{ 
